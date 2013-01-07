@@ -106,8 +106,9 @@ function MapFrame(params)  {
 		for (var i= 0; i < markers.length; i++) {
 			markers[i].setMap(null)
 			google.maps.event.removeListener(listeners[i]);
-			//iws[i] = null;
+			listeners[i] = null;
 		}
+		listeners = [];
 	}
 }
 
