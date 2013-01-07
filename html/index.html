@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxLgBVRTsvqA_mjUBTHoKMlefXBPXTVnU&sensor=false"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="scripts/rickshaw/rickshaw.min.js"></script> 
+
+<script src="scripts/mapplayer/mapplayer.js"></script>
+<script src="scripts/mapplayer/frame.js"></script>
+
+<script src="scripts/jquery-tod.js"></script>
+<script src="scripts/main.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"></link>
+<link rel="stylesheet" type="text/css" href="scripts/rickshaw-master/rickshaw.min.css"></link>
+<style type="text/css">
+#loading {
+	cursor: wait;
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: white;
+	z-index: 99;
+}
+#loading p {
+	position: absolute;
+	width: 400px;
+	height: 200px;
+	top: 50%;
+	left: 50%;
+	margin-left: -200px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="loading">
+	<p>
+		<img src="images/loading.gif"/> <br/>Loading 3.7Mb dataset...<br/>
+	</p>
+</div>
+<div id="tod">&nbsp;</div>
+<div id="map_canvas" style="width: 700px; height: 500px;"></div>
+
+<input id="nextFrame" type="button" value="Next Frame" disabled="disabled"/>
+<input id="playToggle" type="button" value="Play" disabled="disabled"/>
+<!--<input id="speedDown" type="button" value="Speed -" />
+<input id="speedUp" type="button" value="Speed +" /> -->
+
+<p id="curTime">...</p>
+<div id="slider"></div>
+<div id="chart"></div>
+
+</body>
+</html>
