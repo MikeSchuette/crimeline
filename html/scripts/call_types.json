@@ -1,47 +1,55 @@
 {
 	"3": {
 	  "title":"Sexual Assault 1-2-3-4-/Rape",
-	  "color":"#ff0000"
+	  "color":"#a60042"
 	},
 	"4": {
 	  "title":"Robbery-Armed",
-	  "color":"#ffc480"
+	  "color":"#d90091"
 	},
 	"5": {
 	  "title":"Battery",
-	  "color":"#7ee639"
+	  "color":"#d90074"
 	},
 	"6": {
 	  "title":"Arson",
-	  "color":"#9100d9"
+	  "color":"#00ff88"
 	},
 	"7": {
 	  "title":"Weapons Offense",
-	  "color":"#990000"
+	  "color":"#60806c"
 	},
 	"9": {
 	  "title":"Robbery-Strong Armed",
-	  "color":"#a67f53"
+	  "color":"#ff00cc"
+	},
+	"9A": {
+	  "title":"Overdose (before 10/26/93)",
+	  "color":"#ff00cc"
 	},
 	"10": {
 	  "title":"Residential Burglary",
-	  "color":"#5ba629"
+	  "color":"#66ff00"
 	},
 	"11": {
 	  "title":"Non-Residential Burglary",
-	  "color":"#297ca6"
+	  "color":"#79f289"
 	},
 	"12": {
 	  "title":"Theft",
-	  "color":"#602080"
+	  "color":"#ace6bb"
+	},
+	"12A": {
+	  "title":"Theft from Auto",
+	  "color":"#ace6bb"
 	},
 	"13": {
 	  "title":"Retail Theft",
-	  "color":"#7f2020"
+	  "color":"#8cb386"
 	},
 	"14": {
 	  "title":"Stolen Auto",
-	  "color":"#f2d6b6"
+	  "color":"#36d98d"
 	},
 	"15": {
 	  "title":"Stolen Other Vehicle/Cycle",
@@ -49,67 +57,87 @@
 	},
 	"16": {
 	  "title":"Stolen Bike",
-	  "color":"#6cb5d9"
+	  "color":"#00a600"
 	},
 	"17": {
 	  "title":"Death Inv/Suicide",
-	  "color":"#8d29a6"
+	  "color":"#ace2e6"
 	},
 	"18": {
 	  "title":"Attempted Suicide",
-	  "color":"#a65353"
+	  "color":"#ffc480"
 	},
 	"19": {
 	  "title":"Worthless Check",
-	  "color":"#a6927c"
+	  "color":"#008000"
+	},
+	"20": {
+	  "title":"Exposure",
+	  "color":"#ff4400"
 	},
 	"21": {
 	  "title":"Fraud",
 	  "color":"#488040"
 	},
+	"21I": {
+	  "title":"FRAUD/IDENTITY THEFT",
+	  "color":"#488040"
+	},
 	"22": {
 	  "title":"Prostitution/Soliciting",
-	  "color":"#acd2e6"
+	  "color":"#408062"
 	},
 	"23": {
 	  "title":"Drug Incident",
-	  "color":"#b866cc"
+	  "color":"#00a66f"
 	},
 	"24": {
 	  "title":"Sexual Assault of a Child",
-	  "color":"#e6acac"
+	  "color":"#ff6600"
 	},
 	"25": {
 	  "title":"Forgery",
-	  "color":"#ffaa00"
+	  "color":"#778000"
 	},
 	"26": {
 	  "title":"Miscellaneous Sex Offense",
-	  "color":"#8cb386"
+	  "color":"#d90057"
+	},
+	"27": {
+	  "title":"Enticement/Kidnapping",
+	  "color":"#cc33ad"
 	},
 	"28": {
 	  "title":"Liquor Law Investigation",
 	  "color":"#0074d9"
 	},
+	"28B": {
+	  "title":"LIQUOR LAW/BAR CHECK/OTHER",
+	  "color":"#0074d9"
+	},
 	"29": {
 	  "title":"Aggravated Battery",
-	  "color":"#734080"
+	  "color":"#f279ea"
 	},
 	"31": {
 	  "title":"EMS Assist",
-	  "color":"#806060"
+	  "color":"#0022ff"
 	},
 	"32": {
 	  "title":"Person with a Gun",
-	  "color":"#a66f00"
+	  "color":"#e2f200"
 	},
 	"34": {
 	  "title":"Special Event",
-	  "color":"#00a600"
+	  "color":"#0066ff"
 	},
 	"35": {
 	  "title":"Threats Complaint",
-	  "color":"#005299"
+	  "color":"#bf4d00"
+	},
+	"36": {
+	  "title":"Bomb Threat",
+	  "color":"#ffaa00"
 	},
 	"37": {
 	  "title":"Fight Call",
@@ -117,51 +145,59 @@
 	},
 	"38": {
 	  "title":"Disturbance Call",
-	  "color":"#cc1b00"
+	  "color":"#91dcf2"
 	},
 	"39": {
 	  "title":"Juvenile Complaint",
-	  "color":"#d9a336"
+	  "color":"#299da6"
 	},
 	"40": {
 	  "title":"Arrested Juvenile",
-	  "color":"#008000"
+	  "color":"#00ccff"
 	},
 	"41": {
 	  "title":"Domestic/Family Trouble",
-	  "color":"#296ca6"
+	  "color":"#ff9180"
 	},
 	"42": {
 	  "title":"Neighbor Trouble",
-	  "color":"#b086b3"
+	  "color":"#73cfe6"
 	},
 	"43": {
 	  "title":"Landlord Tenant Trouble",
-	  "color":"#d94c36"
+	  "color":"#298da6"
 	},
 	"44": {
 	  "title":"Suspicious Person",
-	  "color":"#d9b56c"
+	  "color":"#233f8c"
 	},
 	"45": {
 	  "title":"Suspicious Vehicle",
-	  "color":"#79f289"
+	  "color":"#297ca6"
 	},
 	"46": {
 	  "title":"Prowler Complaint",
-	  "color":"#73b0e6"
+	  "color":"#ffe680"
+	},
+	"46S": {
+	  "title":"Stalking Complaint",
+	  "color":"#ffe680"
 	},
 	"47": {
 	  "title":"Unwanted Person",
-	  "color":"#f279ea"
+	  "color":"#def2b6"
 	},
 	"48": {
 	  "title":"Annoying/Obscene Phone Calls",
-	  "color":"#a63a29"
+	  "color":"#ffcc00"
 	},
 	"49": {
 	  "title":"Noise Complaint",
-	  "color":"#7f6a40"
+	  "color":"#29a68d"
+	},
+	"50U": {
+	  "title":"Accident Unknown",
+	  "color":"#2b3eba"
 	},
 	"54": {
 	  "title":"Traffic Arrest",
@@ -169,87 +205,131 @@
 	},
 	"55": {
 	  "title":"OMVWI Arrest/Intoxicated Driver",
-	  "color":"#406280"
+	  "color":"#b8d936"
 	},
 	"56": {
 	  "title":"Intoxicated Person",
-	  "color":"#f2b6ee"
+	  "color":"#6a8040"
 	},
 	"57": {
 	  "title":"On Street Parking Complaint",
-	  "color":"#ff9180"
+	  "color":"#008077"
+	},
+	"57P": {
+	  "title":"Check Parking Postings",
+	  "color":"#008077"
+	},
+	"57S": {
+	  "title":"PARKING STREET STORAGE",
+	  "color":"#008077"
 	},
 	"58": {
 	  "title":"Private Property Parking Complaint",
-	  "color":"#ffcc00"
+	  "color":"#9ba600"
 	},
 	"59": {
 	  "title":"Escort Conveyance",
-	  "color":"#ace6bb"
+	  "color":"#005299"
+	},
+	"60C": {
+	  "title":"TRAFFIC COMPLAINT",
+	  "color":"#4859c2"
+	},
+	"60R": {
+	  "title":"Traffic Incident/Road Rage",
+	  "color":"#d98d36"
 	},
 	"61": {
 	  "title":"Towed Vehicle",
-	  "color":"#869eb3"
+	  "color":"#a0a653"
+	},
+	"61A": {
+	  "title":"Towed Veh/Abandonment",
+	  "color":"#a0a653"
 	},
 	"65": {
 	  "title":"Check Person",
-	  "color":"#ff00cc"
+	  "color":"#296ca6"
+	},
+	"65P": {
+	  "title":"PROBLEM SOLVING-PERSON",
+	  "color":"#296ca6"
+	},
+	"65F": {
+	  "title":"FOOT PATROL",
+	  "color":"#296ca6"
 	},
 	"66": {
 	  "title":"Check Property",
-	  "color":"#7f4840"
+	  "color":"#607180"
+	},
+	"66F": {
+	  "title":"FOOT PATROL",
+	  "color":"#607180"
+	},
+	"66P": {
+	  "title":"PROBLEM SOLVING-PROPERTY",
+	  "color":"#607180"
 	},
 	"67": {
 	  "title":"Found Property",
-	  "color":"#7f6600"
+	  "color":"#86b3aa"
 	},
 	"68": {
 	  "title":"Lost Property",
-	  "color":"#00a642"
+	  "color":"#7382e6"
 	},
 	"69": {
 	  "title":"Damaged Property Complaint",
-	  "color":"#607180"
+	  "color":"#7ee639"
+	},
+	"69G": {
+	  "title":"Graffiti Complaint",
+	  "color":"#7ee639"
 	},
 	"70": {
 	  "title":"Alarm",
-	  "color":"#99007a"
+	  "color":"#46e8eb"
+	},
+	"70B": {
+	  "title":"Alarm - Broadcast and File",
+	  "color":"#46e8eb"
 	},
 	"71": {
 	  "title":"Trespassing Complaint",
-	  "color":"#a6827c"
+	  "color":"#5ba629"
 	},
 	"72": {
 	  "title":"Animal Complaint - Stray",
-	  "color":"#b2982d"
+	  "color":"#558000"
 	},
 	"73": {
 	  "title":"Animal Complaint - Bite",
-	  "color":"#60806c"
+	  "color":"#990000"
 	},
 	"74": {
 	  "title":"Animal Complaint - Disturbance",
-	  "color":"#0066ff"
+	  "color":"#602080"
 	},
 	"75": {
 	  "title":"Attempt to Locate Person",
-	  "color":"#cc33ad"
+	  "color":"#535ea6"
 	},
 	"76": {
 	  "title":"Found Person",
-	  "color":"#ff4400"
+	  "color":"#00e6d6"
 	},
 	"77": {
 	  "title":"Missing Juvenile/Runaway",
-	  "color":"#ffe680"
+	  "color":"#73b0e6"
 	},
 	"78": {
 	  "title":"Missing Adult",
-	  "color":"#00ff88"
+	  "color":"#6cb5d9"
 	},
 	"79": {
 	  "title":"Person Down",
-	  "color":"#79aaf2"
+	  "color":"#86aab3"
 	},
 	"80": {
 	  "title":"Child Abuse",
@@ -261,11 +341,11 @@
 	},
 	"82": {
 	  "title":"Violation of Court Order",
-	  "color":"#a69553"
+	  "color":"#aaff00"
 	},
 	"83": {
 	  "title":"Overdose Investigation",
-	  "color":"#36d98d"
+	  "color":"#84d96c"
 	},
 	"84": {
 	  "title":"Preserve the Peace",
@@ -273,147 +353,95 @@
 	},
 	"85": {
 	  "title":"Safety Hazard",
-	  "color":"#d90091"
+	  "color":"#293aa6"
+	},
+	"86": {
+	  "title":"Fire Investigation",
+	  "color":"#00ffcc"
 	},
 	"87": {
 	  "title":"Assist Citizen",
-	  "color":"#d96236"
-	},
-	"88": {
-	  "title":"Assist Fire/Police",
-	  "color":"#f2e6b6"
-	},
-	"89": {
-	  "title":"Serving Legal Papers",
-	  "color":"#408062"
-	},
-	"9A": {
-	  "title":"Overdose (before 10/26/93)",
-	  "color":"#002280"
-	},
-	"90": {
-	  "title":"Civil Dispute",
-	  "color":"#80406a"
-	},
-	"91": {
-	  "title":"PC Conveyance/Commitment (Chptr 51)",
-	  "color":"#8c3f23"
-	},
-	"94": {
-	  "title":"Solicitors Complaint",
-	  "color":"#b3aa86"
-	},
-	"95": {
-	  "title":"Adult Arrest",
-	  "color":"#00a66f"
-	},
-	"96": {
-	  "title":"Rec/Stolen Outside Agency",
-	  "color":"#335ccc"
-	},
-	"97": {
-	  "title":"Information",
-	  "color":"#806075"
-	},
-	"98": {
-	  "title":"911 Disconnect",
-	  "color":"#ffa280"
-	},
-	"99": {
-	  "title":"PNB/AED Response",
-	  "color":"#807960"
-	},
-	"12A": {
-	  "title":"Theft from Auto",
-	  "color":"#73e6bf"
-	},
-	"21I": {
-	  "title":"FRAUD/IDENTITY THEFT",
-	  "color":"#233f8c"
-	},
-	"28B": {
-	  "title":"LIQUOR LAW/BAR CHECK/OTHER",
-	  "color":"#d90074"
-	},
-	"46S": {
-	  "title":"Stalking Complaint",
-	  "color":"#a66953"
-	},
-	"50U": {
-	  "title":"Accident Unknown",
-	  "color":"#d9ce36"
-	},
-	"57P": {
-	  "title":"Check Parking Postings",
-	  "color":"#ace6d2"
-	},
-	"57S": {
-	  "title":"PARKING STREET STORAGE",
-	  "color":"#acbbe6"
-	},
-	"60C": {
-	  "title":"TRAFFIC COMPLAINT",
-	  "color":"#a6296c"
-	},
-	"60R": {
-	  "title":"Traffic Incident/Road Rage",
-	  "color":"#e6bbac"
-	},
-	"61A": {
-	  "title":"Towed Veh/Abandonment",
-	  "color":"#e2f200"
-	},
-	"65F": {
-	  "title":"FOOT PATROL",
-	  "color":"#00ffcc"
-	},
-	"66F": {
-	  "title":"FOOT PATROL",
-	  "color":"#0022ff"
-	},
-	"66P": {
-	  "title":"PROBLEM SOLVING-PROPERTY",
-	  "color":"#f279ba"
-	},
-	"69G": {
-	  "title":"Graffiti Complaint",
-	  "color":"#ff6600"
-	},
-	"70B": {
-	  "title":"Alarm - Broadcast and File",
-	  "color":"#9ba600"
+	  "color":"#6b84c7"
 	},
 	"87C": {
 	  "title":"ASSIST/COMMUNITY POLICING",
-	  "color":"#29a68d"
+	  "color":"#6b84c7"
 	},
 	"87V": {
 	  "title":"VEHICLE LOCKOUTS",
-	  "color":"#293aa6"
+	  "color":"#6b84c7"
+	},
+	"87T": {
+	  "title":"ASSIST/TRANSLATE",
+	  "color":"#6b84c7"
+	},
+	"88": {
+	  "title":"Assist Fire/Police",
+	  "color":"#79aaf2"
 	},
 	"88F": {
 	  "title":"ASSIST/FOLLOW UP",
-	  "color":"#b3869e"
+	  "color":"#79aaf2"
 	},
 	"88K": {
 	  "title":"ASSIST K9",
-	  "color":"#bf4d00"
+	  "color":"#79aaf2"
 	},
 	"88S": {
 	  "title":"ASSIST DANE CO SHERIFF",
-	  "color":"#778000"
+	  "color":"#79aaf2"
 	},
 	"88T": {
 	  "title":"ON DUTY TRAINING",
-	  "color":"#86b3aa"
+	  "color":"#79aaf2"
+	},
+	"89": {
+	  "title":"Serving Legal Papers",
+	  "color":"#acd2e6"
 	},
 	"89C": {
 	  "title":"ASSIST/COURT",
-	  "color":"#7382e6"
+	  "color":"#acd2e6"
+	},
+	"90": {
+	  "title":"Civil Dispute",
+	  "color":"#d94c36"
+	},
+	"91": {
+	  "title":"PC Conveyance/Commitment (Chptr 51)",
+	  "color":"#002280"
+	},
+	"92": {
+	  "title":"Injured Person",
+	  "color":"#406280"
+	},
+	"94": {
+	  "title":"Solicitors Complaint",
+	  "color":"#00a642"
+	},
+	"95": {
+	  "title":"Adult Arrest",
+	  "color":"#335ccc"
+	},
+	"96": {
+	  "title":"Rec/Stolen Outside Agency",
+	  "color":"#b866cc"
+	},
+	"97": {
+	  "title":"Information",
+	  "color":"#73e6bf"
+	},
+	"98": {
+	  "title":"911 Disconnect",
+	  "color":"#868cb3"
+	},
+	"99": {
+	  "title":"PNB/AED Response",
+	  "color":"#acbbe6"
 	},
 	"NOTE": {
 	  "title":"NON-URGENT NOTIFICATIONS",
-	  "color":"#d90057"
+	  "color":"#ace6d2"
 	},
 	"REPO": {
 	  "title":"REPOSSESSION",
@@ -421,34 +449,6 @@
 	},
 	"ROAD": {
 	  "title":"REQUESTS FOR HWY/STS DEPTS",
-	  "color":"#a0a653"
-	},
-	"20": {
-	  "title":"Exposure",
-	  "color":"#00e6d6"
-	},
-	"27": {
-	  "title":"Enticement/Kidnapping",
-	  "color":"#535ea6"
-	},
-	"36": {
-	  "title":"Bomb Threat",
-	  "color":"#a60042"
-	},
-	"86": {
-	  "title":"Fire Investigation",
-	  "color":"#d97736"
-	},
-	"92": {
-	  "title":"Injured Person",
-	  "color":"#b8d936"
-	},
-	"65P": {
-	  "title":"PROBLEM SOLVING-PERSON",
-	  "color":"#008077"
-	},
-	"87T": {
-	  "title":"ASSIST/TRANSLATE",
-	  "color":"#868cb3"
+	  "color":"#869eb3"
 	}
 }
