@@ -14,8 +14,11 @@
 <script src="scripts/main.js"></script>
 
 
-<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"></link>
-<link rel="stylesheet" type="text/css" href="scripts/rickshaw-master/rickshaw.min.css"></link>
+<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="scripts/rickshaw-master/rickshaw.min.css">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
 <style type="text/css">
 #loading {
 	cursor: wait;
@@ -38,6 +41,7 @@
 	margin-left: -200px;
 }
 
+#jquery-tod-img { width:100% !important; height:120px !important; }
 </style>
 </head>
 <body>
@@ -47,17 +51,85 @@
 		<img src="images/loading.gif"/> <br/>Loading 3.7Mb dataset...<br/>
 	</p>
 </div>
-<div id="tod">&nbsp;</div>
-<div id="map_canvas" style="width: 700px; height: 500px;"></div>
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a class="brand" href="#home">Madison Crimeline</a>
+			<div class="nav-collapse collapse">
+				<p class="navbar-text pull-right">
+					Developed by <a href="mailto:mike.schuette@gmail.com">Mike Schuette</a> and <a href="http://www.madison.com">madison.com</a>
+				</p>
+				<ul class="nav">
+					<li class="active"><a class="btn btn-warning btn-large"href="#legend">Legend</a></li>
+					<li><a class="btn btn-warning btn-large"href="#info">Info</a></li>
+					<li><a class="btn btn-warning btn-large"href="#search">Search</a></li>
+					<li><a class="btn btn-warning btn-large"href="#contact">Contact</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+</div>
 
-<input id="nextFrame" type="button" value="Next Frame" disabled="disabled"/>
-<input id="playToggle" type="button" value="Play" disabled="disabled"/>
-<!--<input id="speedDown" type="button" value="Speed -" />
-<input id="speedUp" type="button" value="Speed +" /> -->
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span8">
+			<div class="hero-unit">
+				<h2>Crime awareness in the City of Madison</h2>
+				<p>Text here intro...</p>
 
-<p id="curTime">...</p>
-<div id="slider"></div>
-<div id="chart"></div>
+				<span class="6">
+					<div id="tod">&nbsp;</div>
+					<div id="map_canvas" style="width: 100%; height: 600px;"></div>
+
+					<input id="nextFrame" type="button" value="Next Frame" disabled="disabled"/>
+					<input id="playToggle" type="button" value="Play" disabled="disabled"/>
+					<!--<input id="speedDown" type="button" value="Speed -" />
+					<input id="speedUp" type="button" value="Speed +" /> -->
+
+					<p id="curTime">...</p>
+					<div id="slider"></div>
+					<div id="chart"></div>
+				</span>
+			</div>
+		</div><!--/span-->
+<!--
+		<div class="span4">
+			<div class="well" style="margin-top:100px;">
+				<ul class="nav nav-list">
+					<li class="nav-header">Module One</li>
+					<li class="nav-header">Module Two</li>
+					<li class="nav-header">Module Three</li>
+				</ul>
+			</div>
+		</div>
+-->
+	</div><!--/row-->
+	<hr>
+	<footer>
+	<p>&copy; madison.com 2013</p>
+	</footer>
+</div><!--/.fluid-container-->
+
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- <script src="js/jquery.js"></script> 
+<script src="js/bootstrap-transition.js"></script>
+<script src="js/bootstrap-alert.js"></script>
+<script src="js/bootstrap-modal.js"></script>
+<script src="js/bootstrap-dropdown.js"></script>
+<script src="js/bootstrap-scrollspy.js"></script>
+<script src="js/bootstrap-tab.js"></script>
+<script src="js/bootstrap-tooltip.js"></script>
+<script src="js/bootstrap-popover.js"></script>
+<script src="js/bootstrap-button.js"></script>
+<script src="js/bootstrap-collapse.js"></script>
+<script src="js/bootstrap-carousel.js"></script>
+<script src="js/bootstrap-typeahead.js"></script>
+-->
 
 </body>
 </html>
