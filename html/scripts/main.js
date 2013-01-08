@@ -170,10 +170,10 @@ function CrimeApp() {
 	}
 
 	function btnLegend() {
-		mapManager.pause();
+		//mapManager.pause();
 		$("#legendDialog").dialog({
 			title: "Legend",
-			modal: true,
+			//modal: true,
 			width: 500,
 			resizable: false,
 		});
