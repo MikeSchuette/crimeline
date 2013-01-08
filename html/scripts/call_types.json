@@ -1,7 +1,7 @@
 {
 	"3": {
 	  "title":"Sexual Assault 1-2-3-4-/Rape",
-	  "color":"#a60042"
+	  "color":"#ff00dd"
 	},
 	"4": {
 	  "title":"Robbery-Armed",
@@ -445,7 +445,7 @@
 	},
 	"REPO": {
 	  "title":"REPOSSESSION",
-	  "color":"#7f3300"
+	  "color":"#a0a653"
 	},
 	"ROAD": {
 	  "title":"REQUESTS FOR HWY/STS DEPTS",
