@@ -124,12 +124,17 @@ function CrimeApp() {
 			max: mapManager.numFrames(),
 		});
 
-		$("#playToggle").on("click", btnTogglePlay);
+		$("#playToggle").click(btnTogglePlay);
 		$("#playToggle").removeAttr("disabled");
-		$("#nextFrame").on("click", btnNextFrame);
+		$("#nextFrame").click(btnNextFrame);
 		$("#nextFrame").removeAttr("disabled");
 		//$("#speedUp").on("click", btnSpeedUp);
 		//$("#speedDown").on("click", btnSpeedDown);
+
+		$("#btnLegend").click(btnLegend);
+		$("#btnInfo").click(btnInfo);
+		$("#btnSearch").click(btnSearch);
+		$("#btnContact").click(btnContact);
 
 		setTimeout(function() {$("#loading").fadeOut(300);}, 1000); //allow 1s for map draw
 	}
@@ -162,6 +167,46 @@ function CrimeApp() {
 	function jump(i) {
 		mapManager.jump(i);
 		mapManager.draw();
+	}
+
+	function btnLegend() {
+		mapManager.pause();
+		$("#legendDialog").dialog({
+			title: "Legend",
+			modal: true,
+			width: 500,
+			resizable: false,
+		});
+	}
+
+	function btnInfo() {
+		mapManager.pause();
+		$("#infoDialog").dialog({
+			title: "Info",
+			modal: true,
+			width: 500,
+			resizable: false,
+		});
+	}
+
+	function btnSearch() {
+		mapManager.pause();
+		$("#searchDialog").dialog({
+			title: "Search",
+			modal: true,
+			width: 500,
+			resizable: false,
+		});
+	}
+
+	function btnContact() {
+		mapManager.pause();
+		$("#contactDialog").dialog({
+			title: "Contact",
+			modal: true,
+			width: 500,
+			resizable: false,
+		});
 	}
 
 	function btnNextFrame() {

@@ -42,14 +42,169 @@
 }
 
 #jquery-tod-img { width:100% !important; height:120px !important; }
+
+.jquery-dialog {
+	overflow-y: auto;
+	height: 400px;
+}
+
 </style>
+<title>Madison Crimeline</title>
 </head>
 <body>
 
+
+<!-- Loading screen -->
 <div id="loading">
 	<p> <img src="images/loading.gif"/> <br/>Loading 3.7Mb dataset...<br/> </p>
 </div>
 
+<!-- Jquery Dialogs -->
+<div id="legendDialog" style="display:none">
+	<div class="jquery-dialog">
+		<p>Legend here</p>
+		<table>
+			<thead>
+				<tr>
+					<th>&nbsp;</th>
+					<th>Code</th>
+					<th>Desc</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #a60042; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>3</td><td>Sexual Assault 1-2-3-4-/Rape</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #d90091; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>4</td><td>Robbery-Armed</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #d90074; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>5</td><td>Battery</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #00ff88; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>6</td><td>Arson</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #60806c; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>7</td><td>Weapons Offense</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #ff00cc; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>9</td><td>Robbery-Strong Armed</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #ff00cc; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>9A</td><td>Overdose (before 10/26/93)</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #66ff00; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>10</td><td>Residential Burglary</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #79f289; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>11</td><td>Non-Residential Burglary</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #ace6bb; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>12</td><td>Theft</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #ace6bb; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>12A</td><td>Theft from Auto</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #8cb386; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>13</td><td>Retail Theft</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #36d98d; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>14</td><td>Stolen Auto</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #aaf279; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>15</td><td>Stolen Other Vehicle/Cycle</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #00a600; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>16</td><td>Stolen Bike</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #ace2e6; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>17</td><td>Death Inv/Suicide</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #ffc480; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>18</td><td>Attempted Suicide</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #008000; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>19</td><td>Worthless Check</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #ff4400; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>20</td><td>Exposure</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #488040; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>21</td><td>Fraud</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #488040; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>21I</td><td>FRAUD/IDENTITY THEFT</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #408062; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>22</td><td>Prostitution/Soliciting</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #00a66f; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>23</td><td>Drug Incident</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #ff6600; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>24</td><td>Sexual Assault of a Child</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #778000; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>25</td><td>Forgery</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #d90057; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>26</td><td>Miscellaneous Sex Offense</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #cc33ad; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>27</td><td>Enticement/Kidnapping</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #0074d9; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>28</td><td>Liquor Law Investigation</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #0074d9; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>28B</td><td>LIQUOR LAW/BAR CHECK/OTHER</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #f279ea; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>29</td><td>Aggravated Battery</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #0022ff; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>31</td><td>EMS Assist</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #e2f200; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>32</td><td>Person with a Gun</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #0066ff; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>34</td><td>Special Event</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #bf4d00; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>35</td><td>Threats Complaint</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #ffaa00; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>36</td><td>Bomb Threat</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #ca00d9; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>37</td><td>Fight Call</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #91dcf2; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>38</td><td>Disturbance Call</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #299da6; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>39</td><td>Juvenile Complaint</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #00ccff; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>40</td><td>Arrested Juvenile</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #ff9180; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>41</td><td>Domestic/Family Trouble</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #73cfe6; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>42</td><td>Neighbor Trouble</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #298da6; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>43</td><td>Landlord Tenant Trouble</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #233f8c; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>44</td><td>Suspicious Person</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #297ca6; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>45</td><td>Suspicious Vehicle</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #ffe680; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>46</td><td>Prowler Complaint</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #ffe680; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>46S</td><td>Stalking Complaint</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #def2b6; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>47</td><td>Unwanted Person</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #ffcc00; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>48</td><td>Annoying/Obscene Phone Calls</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #29a68d; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>49</td><td>Noise Complaint</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #2b3eba; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>50U</td><td>Accident Unknown</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #00e63d; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>54</td><td>Traffic Arrest</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #b8d936; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>55</td><td>OMVWI Arrest/Intoxicated Driver</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #6a8040; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>56</td><td>Intoxicated Person</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #008077; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>57</td><td>On Street Parking Complaint</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #008077; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>57P</td><td>Check Parking Postings</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #008077; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>57S</td><td>PARKING STREET STORAGE</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #9ba600; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>58</td><td>Private Property Parking Complaint</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #005299; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>59</td><td>Escort Conveyance</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #4859c2; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>60C</td><td>TRAFFIC COMPLAINT</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #d98d36; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>60R</td><td>Traffic Incident/Road Rage</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #a0a653; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>61</td><td>Towed Vehicle</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #a0a653; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>61A</td><td>Towed Veh/Abandonment</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #296ca6; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>65</td><td>Check Person</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #296ca6; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>65P</td><td>PROBLEM SOLVING-PERSON</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #296ca6; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>65F</td><td>FOOT PATROL</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #607180; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>66</td><td>Check Property</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #607180; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>66F</td><td>FOOT PATROL</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #607180; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>66P</td><td>PROBLEM SOLVING-PROPERTY</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #86b3aa; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>67</td><td>Found Property</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #7382e6; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>68</td><td>Lost Property</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #7ee639; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>69</td><td>Damaged Property Complaint</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #7ee639; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>69G</td><td>Graffiti Complaint</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #46e8eb; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>70</td><td>Alarm</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #46e8eb; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>70B</td><td>Alarm - Broadcast and File</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #5ba629; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>71</td><td>Trespassing Complaint</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #558000; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>72</td><td>Animal Complaint - Stray</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #990000; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>73</td><td>Animal Complaint - Bite</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #602080; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>74</td><td>Animal Complaint - Disturbance</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #535ea6; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>75</td><td>Attempt to Locate Person</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #00e6d6; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>76</td><td>Found Person</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #73b0e6; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>77</td><td>Missing Juvenile/Runaway</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #6cb5d9; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>78</td><td>Missing Adult</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #86aab3; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>79</td><td>Person Down</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #a65395; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>80</td><td>Child Abuse</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #a62c00; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>81</td><td>Child Neglect</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #aaff00; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>82</td><td>Violation of Court Order</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #84d96c; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>83</td><td>Overdose Investigation</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #003ad9; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>84</td><td>Preserve the Peace</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #293aa6; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>85</td><td>Safety Hazard</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #00ffcc; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>86</td><td>Fire Investigation</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #6b84c7; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>87</td><td>Assist Citizen</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #6b84c7; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>87C</td><td>ASSIST/COMMUNITY POLICING</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #6b84c7; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>87V</td><td>VEHICLE LOCKOUTS</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #6b84c7; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>87T</td><td>ASSIST/TRANSLATE</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #79aaf2; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>88</td><td>Assist Fire/Police</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #79aaf2; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>88F</td><td>ASSIST/FOLLOW UP</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #79aaf2; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>88K</td><td>ASSIST K9</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #79aaf2; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>88S</td><td>ASSIST DANE CO SHERIFF</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #79aaf2; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>88T</td><td>ON DUTY TRAINING</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #acd2e6; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>89</td><td>Serving Legal Papers</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #acd2e6; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>89C</td><td>ASSIST/COURT</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #d94c36; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>90</td><td>Civil Dispute</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #002280; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>91</td><td>PC Conveyance/Commitment (Chptr 51)</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #406280; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>92</td><td>Injured Person</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #00a642; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>94</td><td>Solicitors Complaint</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #335ccc; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>95</td><td>Adult Arrest</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #b866cc; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>96</td><td>Rec/Stolen Outside Agency</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #73e6bf; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>97</td><td>Information</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #868cb3; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>98</td><td>911 Disconnect</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #acbbe6; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>99</td><td>PNB/AED Response</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #ace6d2; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>NOTE</td><td>NON-URGENT NOTIFICATIONS</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #7f3300; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>REPO</td><td>REPOSSESSION</td></tr>
+				<tr style="vertical-align: middle;"><td><div style="background-color: #869eb3; width: 1em; height: 1em; border-radius: 0.5em;">&nbsp;</div></td><td>ROAD</td><td>REQUESTS FOR HWY/STS DEPTS</td></tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div id="infoDialog" style="display:none" >
+	<div class="jquery-dialog">
+	<p>Info here</p>
+	</div>
+</div>
+
+<div id="searchDialog" style="display:none">
+	<p>Search is not implemented yet.  Coming Soon!</p>
+</div>
+
+<div id="contactDialog" style="display:none">
+	<p>Contact here</p>
+</div>
+
+<!-- Main -->
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container-fluid">
@@ -59,10 +214,10 @@
 					Developed by <a href="mailto:mike.schuette@gmail.com">Mike Schuette</a> and <a href="http://www.madison.com">madison.com</a>
 				</p>
 				<ul class="nav">
-					<li class="active"><a class="btn btn-warning"href="#legend">Legend</a></li>
-					<li><a class="btn btn-warning"href="#info">Info</a></li>
-					<li><a class="btn btn-warning"href="#search">Search</a></li>
-					<li><a class="btn btn-warning"href="#contact">Contact</a></li>
+					<li><a id="btnLegend" class="btn btn-warning">Legend</a></li>
+					<li><a id="btnInfo" class="btn btn-warning">Info</a></li>
+					<li><a id="btnSearch" class="btn btn-warning">Search</a></li>
+					<li><a id="btnContact" class="btn btn-warning">Contact</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
