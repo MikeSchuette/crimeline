@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<style type="text/css">
+			.color-swatch {width: 1em; height: 1em; border-radius: 0.5em; margin: auto;}
+			.text-center {text-align:center;}
+			body {background-color:gray;}
+			div {margin-top: -0.2em;}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.1/handlebars.min.js"></script>
+	</head>
+	<body>
+		<div id="color-list"></div>
+		<script id="color-list-template" type="text/x-handlebars-template">
+			<table>
+				<thead>
+					<tr>
+						<th>Color</th>
+						<th>Code</th>
+						<th>Desc</th>
+						<th>#RGB</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{#each items}}
+					<tr>
+						<td><div class="color-swatch" style="background-color: {{color}};">&nbsp;</div></td>
+						<td class="text-center">{{id}}</td>
+						<td>{{title}}</td>
+						<td>{{color}}</td>
+					</tr>
+					{{/each}}
+				</tbody>
+			</table>
+		</script>
+		<script type="text/javascript">
+			callTypesLoaded = function (data) {
+				var items = [];
+
+				/* Organize Data */
+				$.each(data, function(key, val) {
+					items.push({
+						id: key,
+						title: val.title,
+						color: val.color
+					});
+				});
+
+				/* 
+				 * Find and compile template 
+				 * Format data object and execute template
+				 * Render
+				 */
+				$('#color-list').html(Handlebars.compile($("#color-list-template").html())({items:items}));
+			};
+		</script>
+		<script src="scripts/call_types.js" type="text/javascript"></script>
+	</body>
+</html>
